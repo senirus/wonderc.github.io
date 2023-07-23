@@ -1,0 +1,291 @@
+* {    
+  box-sizing: border-box;
+  font-family:'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;   
+}   
+
+body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  gap: 30px;
+}
+
+input[type=text], select, textarea {    
+
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;   
+  font-family: 'Rubik', sans-serif;
+}    
+
+#nextStep {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 5%;
+}    
+
+#nextStep:hover {    
+  background-color: #45a049;    
+}    
+
+.last_container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;
+  margin-bottom: 3%;    
+}
+
+
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;
+  margin-bottom: 6px;    
+}    
+
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}
+
+.commentsTitle{
+  margin-top: 5%;
+  background-image:url('comment-page-header.jpeg');
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+.commentsTitle h1{
+  margin-top: 10%;
+  text-align: center;
+  font-size: 300%;
+}
+.commentsTitle p{
+  text-align: center;
+  font-size: 150%;
+}
+
+
+.qCard{
+  padding: 5%;
+  margin-bottom: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: rgb(182, 232, 255);
+}
+.qCard:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardHeader{
+  padding: 2px 16px;
+  margin-bottom: 5%;
+}
+.cardHeader h2,p{
+  text-align: center;
+}
+  
+.button-container {
+  border-radius: 50px;
+  display:flex;
+  grid-template-columns: auto auto auto auto;
+  gap: 44px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.button-container > div {
+  text-align: center;
+  padding: 3px 7px;
+  font-size: 30px;
+  border-radius: 10%;
+}
+/* Increase radio button's size */
+input[type='radio']{
+  width: 20px;
+  height: 20px;
+}
+
+
+.number-container {
+  text-align: center;
+  display:flex;
+  grid-template-columns: auto auto auto auto;
+  gap: 36px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.number-container > div {
+  text-align: center;
+  padding-right: 31px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+.open-modal {
+  background: #20c997;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  font-size: 48px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.open-modal:active {
+  transform: translateY(-17px);
+}
+
+.modal-content {
+  background: #ccc;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  color: #000;
+  font-size: 30px;
+}
+
+.modal-body p { 
+ font-size: 22px;
+  line-height: 1.5; 
+} 
+
+.hidden-modal { 
+ display: none;
+}
+
+.close-modal {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  font-size: 40px;
+}
+
+.close-modal:hover {
+  color: #fa5252;
+}
+
+.blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.hidden-blur {
+  display: none;
+}
+
+
+
+/* Thank you Pop-up box */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
