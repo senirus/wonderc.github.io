@@ -1,0 +1,334 @@
+
+/* .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 150%;
+    float: left;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: #fbeec1;
+    color: black;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* Container holding the image*/
+/* .container1 {
+    text-align: center;
+    position:static;
+    
+} */
+
+
+body{
+    position: relative;
+    z-index: 5;
+    overflow-x: hidden;
+    
+  }
+  /* navigation bar */
+  .navbar {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-image:url('/images/navbar_back.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: smaller;
+    width: 75%;
+    margin: auto auto;
+    border-width: 10%;
+    border-color: black;
+    border-radius: 5%;
+    
+  }
+  
+  .navbar li {
+    display: inline-block;
+  }
+  
+  
+  .navbar li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:solid;
+    font-size: 150%;
+    color: white;
+    float: left;
+  }
+  
+  .navbar a:hover {
+    border-radius: 5%;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .navbar input[type=text] {
+    float:right;
+    padding: 6px;
+    border:#333;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    font-size: 17px;
+  }
+  
+  a {
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  
+  
+  
+  /* Container holding the image*/
+  .container1 {
+    text-align: center;
+    position:static;
+  }
+  
+  .siteLogo{
+    width:10%;
+    height: 10%;
+    border-radius: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    
+  }
+  
+  .cloud {
+    opacity: 0.8;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+  
+  
+  #cloud1 {
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    left: -100px;
+  }
+  
+  #cloud2 {
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    left: -300px;
+  }
+  
+  #cloud3 {
+    z-index: 3;
+    position: absolute;
+    top: -400px;
+    left: -200px;
+  }
+  
+  #cloud4 {
+    z-index: 4;
+    position: absolute;
+    top:-200px;
+    left: 40px;
+  }
+  
+  .aCard{
+    padding: 5%;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgb(182, 232, 255);
+  }
+  
+  .headerText {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif ;
+    text-align: center;
+    background: #00a8ff;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 5%;
+  }
+  
+  .webSiteDescriptionText {
+    padding: 30px;
+    font-family: 'Rubik', sans-serif ;
+    background: #fed330;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 5%;
+  }
+  
+  .cardsDescriptionText {
+    padding-bottom: 5px;
+    margin-top: 5%;
+    font-family: 'Rubik', sans-serif ;
+    background: white;
+  }
+  
+  .newbadge {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 5px;
+  }
+  
+  .newbadge:hover {
+    border-radius: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  
+  #logo{
+    
+    width: 20%;
+    height: 5%;
+    z-index: 5px;
+   
+  }
+  .destinationCards{
+    margin: auto auto;
+  }
+  
+  
+  .destination1Card {
+    font-family:'Rubik', sans-serif ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  
+  .destination1Card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .destination1title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .destination1Button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .destination1Button:hover, a:hover {
+    opacity: 0.7;
+  }
+  
+  /*bottom button group initiated from https://www.w3schools.com/howto/howto_css_button_group.asp*/
+  
+  .bottom-btn-group button{
+    margin: auto;
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .bottom-btn-group button {
+    background-color: #fed330; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: black; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .bottom-btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .bottom-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .bottom-btn-group button:hover {
+    background-color: #ffffff;
+  }
+  
+  
+  
+  .footerPrimary {
+    font-family:'Rubik', sans-serif ;
+    position:static;
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+    height: 200px;
+    width: 100%;
+    background-color: #00a8ff;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer_text{
+    padding-top: 100px;
+  }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>    
-<html>    
+<html lang="en">  
     <head>
         <title>Wonder Ceylon - Your Gateway to the Soul of Sri Lanka</title>
         <style>
@@ -9,19 +9,28 @@
         <link rel="stylesheet" href="styles_main.css">  
         <link rel="stylesheet" href="styles_comments.css">  
         <script src="comments.js"></script> 
+        <script src="navbar.js"></script>
         
     </head>    
     <body>
-        <div class="navbar">
-            <img src="web_logo_main.png" alt="Wonder Ceylon Logo" class="siteLogo">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="#">Site Map</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Quiz</a></li>
-            <li><a href="comments.html" class="active">Comments</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Meet the Team</a></li>
+        
+        <!--Common navigation bar throughout the site-->
+        <div id="navbar">
+            <img src="web_logo_main.png" alt="Wonder Ceylon Logo" id="siteLogo">
+            
+            <div id="paths">
+                <a href="index.html">Home</a>
+                <a href="#">Store</a>
+                <a href="gallery.html">Explore</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="comments.html" class="active">Feedback</a>
+                <a href="sitemap.html">Pathfinder</a>       
+                <a href="about.html">Meet the Team</a>
+            </div>
+                
+            
         </div>
+  
         <div class="commentsTitle">
             <h1>We really love to hear from you🫶</h1>
             <p>Share your thoughts about our website below and let us know what you think.<br>Your feedback matters! </p>
@@ -45,17 +54,17 @@
                     <div>9</div>
                     <div>10</div>
                 </div>    
-                <div class="button-container" aria-required="true">
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div> 
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
-                    <div><input type="radio" id="am" name="satisfaction" value="am"></div>
+                <div class="button-container" role="checkbox" aria-checked="true">
+                    <div><input type="radio" id="am1" name="satisfaction" value="am"></div>
+                    <div><input type="radio" id="am2" name="satisfaction" value="am"></div>
+                    <div><input type="radio" id="am3" name="satisfaction" value="am"></div> 
+                    <div><input type="radio" id="am4" name="satisfaction" value="am"></div>
+                    <div><input type="radio" id="am5" name="satisfaction" value="am"></div>
+                    <div><input type="radio" id="am6" name="satisfaction" value="am"></div>
+                    <div><input type="radio" id="am7" name="satisfaction" value="am"></div>
+                    <div><input type="radio" id="am8" name="satisfaction" value="am"></div>
+                    <div><input type="radio" id="am9" name="satisfaction" value="am"></div>
+                    <div><input type="radio" id="am10" name="satisfaction" value="am"></div>
                 </div>    
             </div>
 
@@ -74,7 +83,7 @@
                   <h2>How did you want to complete this task today?</h2>
                   <p>(optional)</p>
                 </header>
-                <select name="way" id="way" style="width: 50%; margin-left: 25%;">
+                <select name="way1" id="way" style="width: 50%; margin-left: 25%;">
                     <option value="command">--Please Select--</option>
                     <option value="phone">Phone</option>
                     <option value="website">Website</option>
@@ -89,7 +98,7 @@
                   <h2>If you had to complete this task again, how would you prefer to do it?</h2>
                   <p>(optional)</p>
                 </header>
-                <select name="way" id="way" style="width: 50%; margin-left: 25%;">
+                <select name="way" id="way2" style="width: 50%; margin-left: 25%;">
                     <option value="command">--Please Select--</option>
                     <option value="phone">Phone</option>
                     <option value="website">Website</option>
@@ -130,11 +139,11 @@
                     </div>    
                     <div class="row">    
                         <div class="col-25">    
-                            <label for="country">Country</label>    
+                            <label for="Country">Country</label>    
                         </div>    
                         <div class="col-75" id="col-75">    
-                            <input type="text" placeholder="Search.." id="Country" name="Country" list="country" onkeyup="filterFunction()" style="width: 60%; margin-left: 3%;" required>
-                            <datalist id="country" name="country" >   
+                            <input type="text" placeholder="Search.." id="Country" list="country" onkeyup="filterFunction()" style="width: 60%; margin-left: 3%;" required>
+                            <datalist id="country">   
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Aland Islands</option>
                                 <option value="AL">Albania</option>
@@ -387,24 +396,39 @@
                                 <option value="YE">Yemen</option>
                                 <option value="ZM">Zambia</option>
                                 <option value="ZW">Zimbabwe</option>
-                            </datalist>          
+                            
+                            </datalist> 
+                            <!--All Countries dropdown list got from https://www.html-code-generator.com/html/drop-down/country-names-->         
                         </div>    
                     </div>                   
                 </div>    
             </div>    
-            <button type="submit" id="nextStep" onclick=" openBox()">Submit</button>
+            <input type="submit" value="Submit" id="submit">
         </form>
         
-        <div id="popup1" class="overlay">
-            <div class="popup">
-                <h2>Here i am</h2>
-                <a class="close" href="#">&times;</a>
-                <div class="content">
-                    Thank to pop me out of that button, but now i'm done so you can close this window.
-                </div>
+        <div id="thanksContent" class="hide">
+            <div class="form-card">
+                <h1 class="thanks-title">Thank you for your
+                   feedback!</h1>
+               <h4 class="thanks-subtitle">We will use your
+                   feedback to improve our website.</h4>
             </div>
+        </div>           
+
+        <!--Bottom button group -->
+        <div class="btn-group" >
+            <a href="#top">🔝 Back to Top</a>
+            <a href="pageeditor_student2.html">👨‍💻 Meet the Editor</a>
+        </div>
+
+        <!--The Footer section common every page of the site-->  
+        <div class="footerPrimary" id="footerPrimary">
+            <p class="footer_text">🏝️🌴✨😍<br>
+              Dive into our website,<br>
+              emabark on a virtual journey through this enchanting paradise island before your upcoming visit <br>
+              to discover the wonders that await you!  <br></p>
         </div>
 
     </body>     
 </html>
-<!-- Initiated from https://www.c-sharpcorner.com/article/creating-a-feedback-form-using-html/ -->    
+<!--Comments Form was initiated from https://www.c-sharpcorner.com/article/creating-a-feedback-form-using-html/ -->    

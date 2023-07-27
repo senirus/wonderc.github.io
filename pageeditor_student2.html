@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
       <title>Wonder Ceylon - Your Gateway to the Soul of Sri Lanka</title>
         <style>
@@ -7,34 +7,42 @@
           </style>
         <link rel="stylesheet" href="styles_main.css">
         <link rel="stylesheet" href="styles_pageeditor_student2.css">
+        <script src="navbar.js"></script>
         
         
   
     </head>
     <body>
-      <div class="navbar">
-        <a href="index.html"><img src="web_logo_main.png" alt="Wonder Ceylon Logo" class="siteLogo"></a>
-          
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">Explore</a></li>
-          <li><a href="#">Mind Play</a></li>
-          <li><a href="#">Site Map</a></li>
-          <li><a href="comments.html">Feedback</a></li>           
-          <li><a href="#">Our Champs</a></li>
-      </div>
+      
+      <!--Common navigation bar throughout the site-->
+      <div id="navbar">
+        <img src="web_logo_main.png" alt="Wonder Ceylon Logo" id="siteLogo">
+        
+        <div id="paths">
+            <a href="index.html">Home</a>
+            <a href="#">Store</a>
+            <a href="#">Explore</a>
+            <a href="#">Quiz</a>
+            <a href="comments.html">Feedback</a>
+            <a href="#">Pathfinder</a>       
+            <a href="#">Meet the Team</a>
+         </div>
+            
+        
+       </div>
+
 
         <div class="pageEditorContent" >
             <h1 style="font-size: 400%;">Page Editor</h1>
             
             <!-- Anchored button group to jump on to various levels of the page -->
 
-            <div class="top-bottom-btn-group" >
-              <button class="nameTag" style="background-color:  #00a8ff; font-weight: bold;">Jump to > </button>
-              <a href="#mainPage"><button>Main Page</button></a>
-              <a href="#commentsForm"><button>Comments Form</button></a>
-              <a href="#additionalCP"><button>Additional Content Page</button></a>
-              <a href="#tasksByMe"><button>Tasks</button></a>
+            <div class="btn-group" >
+              <button class="nameTag" style="background-color:  #00a8ff;">Jump to > </button>
+              <a href="#mainPage">Main Page</a>
+              <a href="#commentsForm">Comments Form</a>
+              <a href="#additionalCP">Additional Content Page</a>
+              <a href="#tasksByMe">Tasks</a>
             </div>
     
             
@@ -45,32 +53,38 @@
                 <strong>Seniru Senarathne.</strong> <br>
                 the student who took charge as <strong>Student 2.</strong><br>
                 I successfully created below pages and completed following tasks.
-            </div>
+             </div>
       
             
             <div class="cardPagesDone" id="mainPage">
                 <h2>Main Page</h2>
-                <p>(will be added after the report)</p>
-                <div class="top-bottom-btn-group" id="jumptoPage" >
-                <a href="index.html" ><button style="background-color:  #00a8ff;">Jump to Main Page</button></a>   
+                <p>During developing this main page, I followed a cool structure.<br> That was, 
+                  I structured main page using the natural structure of our planet.<br> 
+                  There we can see the sky at the top, the land at the middle and lot of water resources at the bottom.</p>
+                <div class="btn-group" id="jumptoPage1" >
+                <a href="index.html" style="background-color:  #00a8ff;">Jump to Main Page</a>   
                 </div>                              
-            </div>
+             </div>
 
             <div class="cardPagesDone" id="commentsForm">
                 <h2>Comments Form</h2>
-                <p>(will be added after the report)</p>
-                <div class="top-bottom-btn-group" id="jumptoPage" >
-                <a href="comments.html" ><button style="background-color:  #00a8ff;">Jump to Comments Form</button></a>   
+                <p>Then used a text area to take the reason for their satisfaction score in words.<br> At the end of the page,
+                   I put an information input box to enter the users’ details only if they are ok as the Janet regulations
+                    (It’s not mandatory). </p>
+                <div class="btn-group" id="jumptoPage2" >
+                <a href="comments.html" style="background-color:  #00a8ff;" >Jump to Comments Form</a>   
                 </div>                              
-            </div>
+             </div>
 
             <div class="cardPagesDone" id="additionalCP">
                 <h2>Additional Content Page</h2>
-                <p>(will be added after the report)</p>
-                <div class="top-bottom-btn-group" id="jumptoPage" >
-                <a href="Arugambay.html" ><button style="background-color:  #00a8ff;">Jump to Additional Content Page</button></a>   
+                <p>Then I chose to do a content page on ‘Arugam bay’ and here’s how I implemented it. <br>
+                  At the top of the page, I included an attractive drone shot of Arugam bay beach area. <br> Then I used a blog type layout and included some knowledge and pictures as well.
+                  </p>
+                <div class="btn-group" id="jumptoPage3" >
+                <a href="Arugambay.html" style="background-color:  #00a8ff;">Jump to Additional Content Page</a>   
                 </div>                              
-            </div>
+             </div>
 
             <div class="tasksDone" id="tasksByMe">
               <h2>Tasks</h2>
@@ -82,16 +96,15 @@
                   <li>Enhanced user experience through JavaScript-driven interactivity, elevating the engagement and functionality of the web pages.</li>
                   <li>Collaborated effectively with other students to ensure smooth integration of the web application.</li>
                   <li>Conducted comprehensive validation of both self-created and peer-contributed pages, ensuring the quality and accuracy of the content.</li>
-
                 </ul>
-              </p>                              
-          </div>
+                                  
+            </div>
 
         </div>
 
         <!-- Anchored button group to jump on to the Page Editor page -->
-        <div class="top-bottom-btn-group" >
-          <a href="#top"><button>🔝 Go Back to Top</button></a>
+        <div class="btn-group" >
+          <a href="#top">🔝 Go Back to Top</a>
         </div>
         
     </body>

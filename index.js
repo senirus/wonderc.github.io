@@ -1,3 +1,4 @@
+//Function to moveout clouds on hover at the every reload
 function moveClouds(callback) {
     /* clouds 1 & 2 move to the left 
        clouds 3 & 4 to the right */

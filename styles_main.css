@@ -1,13 +1,21 @@
+/*This is the unique external stylsheet file for the main page, navigation bar and footer*/
+/*First part contents common styles that are needed for every student */
+/*Second part contents styles that are needed for main page */
+
+/* PART I*/
+
 body{
   position: relative;
   z-index: 5;
   overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
   
 }
 /* navigation bar */
-.navbar {
+
+/* Create a sticky/fixed navbar */
+#navbar {
   list-style-type: none;
-  padding: 0;
   overflow: hidden;
   background-image:url('navbar_back.png');
   background-repeat: no-repeat;
@@ -19,61 +27,88 @@ body{
   text-align: center;
   font-family: 'Rubik', sans-serif;
   font-weight: bolder;
-  font-size: smaller;
-  width: 75%;
+  font-size: 90%;
+  width:75%;
   margin: auto auto;
-  border-width: 10%;
-  border-color: black;
   border-radius: 5%;
-  
+  transition: 0.4s;
+  z-index: 99;
 }
 
-.navbar li {
+#navbar #paths{
+  margin: auto auto;
+}
+
+/* Style the navbar links */
+#navbar a {
   display: inline-block;
-}
-
-
-.navbar li a {
-  display: block;
   color: #333;
   text-align: center;
   padding: 14px 16px;
-  text-decoration:solid;
+  text-decoration:none;
   font-size: 150%;
   color: white;
-  float: left;
+  line-height: 25px;
+  border-radius: 4px;
 }
 
-.navbar a:hover {
+/* Links on mouse-over */
+#navbar a:hover {
   border-radius: 5%;
 }
 
-.navbar a.active {
+#navbar a.active {
   border-bottom: 2px solid rgb(255, 255, 255)
 }
 
-/* Style the search box inside the navigation bar */
-.navbar input[type=text] {
-  float:right;
-  padding: 6px;
-  border:#333;
-  margin-top: 8px;
-  margin-right: 16px;
-  margin-bottom: 8px;
-  font-size: 17px;
+/* Style the logo */
+#navbar #siteLogo{
+  width:10%;
+  height: 20%;
+  border-radius: 5%;
+  margin-top: 1%;
+  font-weight: bold;
+  transition: 0.4s;
 }
 
-a {
-  margin:0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 1200px) {
+  #navbar {
+    padding: 5px 5px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 125%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+  }
+  #navbar-right {
+    float: none;
+  }
 }
 
 
+.footerPrimary {
+  font-family:'Rubik', sans-serif ;
+  position:static;
+  left: 0;
+  bottom: 0;
+  margin-top: 20px;
+  height: 200px;
+  width: 100%;
+  background-color: #00a8ff;
+  color: white;
+  text-align: center;
+}
 
+.footer_text{
+  padding-top: 100px;
+}
+
+
+/*PART II*/
 
 /* Container holding the image*/
 .container1 {
@@ -81,15 +116,19 @@ a {
   position:static;
 }
 
-.siteLogo{
-  width:10%;
-  height: 10%;
-  border-radius: 5%;
-  margin-right: 5%;
-  margin-bottom: 1%;
-  margin-top: 1%;
-  
+#UK_SriLanka_LK_Header {
+  width: 100%;
+  height: 56%;
 }
+
+#cloud1, #cloud2, #cloud3, #cloud4 {
+  width: 11%;
+}
+
+#cloud5, #cloud6{
+  width: 13%;
+}
+
 
 .cloud {
   opacity: 0.8;
@@ -121,7 +160,7 @@ a {
 }
 
 #cloud4 {
-  z-idex: 4;
+  z-index: 4;
   position: absolute;
   top:-200px;
   left: 40px;
@@ -184,11 +223,14 @@ a {
   
   width: 20%;
   height: 5%;
-  z-index: 5px;
+  z-index: 5;
  
 }
 .destinationCards{
-  margin: auto auto;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  
 }
 
 
@@ -199,11 +241,12 @@ a {
   max-width: 300px;
   height: auto;
   text-align: center;
-  display: inline-block;
-  margin-right: 8%;
-  margin-left: 8%;
+  display: inline;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-bottom: 100px;
   margin-top: 100px;
+  display: inline-block;
 }
 
 .destination1Card:hover {
@@ -232,55 +275,110 @@ a {
   opacity: 0.7;
 }
 
-/*bottom button group initiated from https://www.w3schools.com/howto/howto_css_button_group.asp*/
+/*button group styles initiated from https://www.w3schools.com/howto/howto_css_button_group.asp*/
 
-.bottom-btn-group button{
-  margin: auto;
-  width: 25%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.btn-group {
+  padding: 3%;
+  text-align: center;
+  margin: auto auto;
 }
 
-.bottom-btn-group button {
-  background-color: #fed330; /* Green background */
-  border: 1px solid black; /* Green border */
-  color: black; /* White text */
+button {
+  text-align: center;
+  align-content: center;
+  margin: auto auto;
+  border-style: none;
+  border-radius: 10px;
+  
+}
+
+.btn-group button{
+  text-align: center;
+  align-content: center;
+  margin: auto auto;
+  margin-top: 5%;
+  width: 25%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: 'Rubik', sans-serif ;
+  font-weight: bold;
+  font-size: 100%;
+  background-color: #fed330; /* Yellow background */
+  color: black; /* Black text */
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
+  float: none; /* Float the buttons side by side */
 }
 
-.bottom-btn-group button:not(:last-child) {
+.btn-group a{
+  margin-left: 10%;
+  text-align: center;
+  align-content: center;
+  margin: auto auto;
+  margin-top: 5%;
+  width: 75%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: 'Rubik', sans-serif ;
+  font-weight: bold;
+  font-size: 100%;
+  background-color: #fed330; /* Yellow background */
+  color: black; /* Black text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float:none; /* Float the buttons side by side */
+  text-align: center;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.btn-group a{
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group a:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 
 /* Clear floats (clearfix hack) */
-.bottom-btn-group:after {
+.btn-group:after {
   content: "";
   clear: both;
   display: table;
 }
 
 /* Add a background color on hover */
-.bottom-btn-group button:hover {
+.btn-group button:hover {
+  background-color: #ffffff;
+}
+.btn-group a:hover {
   background-color: #ffffff;
 }
 
 
+/* Responsive layout - when the screen is less than 800px wide, make the button group stack on top of each other instead of next to each other */
+/* got from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media screen and (max-width: 1250px) {
+  .btn-group{
+   text-align: center;
+   align-content: center;
+   margin-top: 5%;
+   
 
-.footerPrimary {
-  font-family:'Rubik', sans-serif ;
-  position:static;
-  left: 0;
-  bottom: 0;
-  margin-top: 20px;
-  height: 200px;
-  width: 100%;
-  background-color: #00a8ff;
-  color: white;
-  text-align: center;
-}
+  }
 
-.footer_text{
-  padding-top: 100px;
+  .btn-group button {
+    width: 75%;
+    padding: 10px 24px;
+  }
+
+  .btn-group a {
+    width: 75%;
+    padding: 10px 24px;
+  }
 }

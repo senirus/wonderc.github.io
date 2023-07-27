@@ -1,0 +1,26 @@
+header{
+    text-align: center;
+    
+    background-color: rgb(202, 250, 209);
+    height: 45px;
+    /* margin: 0px 0px 0px 0px; */
+}
+.description{
+    padding: 0;
+    background-color: white;
+}
+.links{
+    background-color:rgb(202, 250, 209) ;
+    margin-top: 4%;
+    height:600px;
+    padding-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+a{
+    color:black;
+}
+h2{
+    color: rgb(81, 80, 82);
+}

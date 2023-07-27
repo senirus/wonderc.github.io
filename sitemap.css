@@ -1,0 +1,39 @@
+ /*   css    */
+ body {
+    font-family: Arial, sans-serif;
+    background:url(/images/sitemap\ .jpg);
+    width:1900px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+}
+
+.svg {
+   
+    max-width: 1250px;
+    margin-top: 30px;
+}
+
+.circle {
+    fill: #64a36f;
+    transition: fill 0.3s;
+}
+
+.circle:hover {
+    fill: #2e6b37;
+    cursor: pointer;
+}
+
+.word {
+    font-size: 18px;
+    font-weight: bold;
+    pointer-events: none;
+    fill: white;
+}

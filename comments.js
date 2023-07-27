@@ -14,11 +14,3 @@ function filterFunction() {
     }
   }
   //Java script function Initiated from w3schools
-
-  //Opening Thank you box
-
-
-  function openBox(){
-    elem = document.getElementById('popup1');
-  }
-  

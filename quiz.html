@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style/quiz.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <!--Common navigation bar throughout the site-->
+    <div id="navbar">
+      <img
+        src="./assets/web_logo_main.png"
+        alt="Wonder Ceylon Logo"
+        id="siteLogo"
+      />
+
+      <div id="paths">
+        <a href="index.html">Home</a>
+        <a href="#">Store</a>
+        <a href="gallery.html">Explore</a>
+        <a href="quiz.html" class="active">Quiz</a>
+        <a href="comments.html">Feedback</a>
+        <a href="sitemap.html">Pathfinder</a>
+        <a href="about.html">Meet the Team</a>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Referred on styling :
+    https://developer.mozilla.org/en-US/
+    https://www.w3schools.com/
+    https://www.geeksforgeeks.org/
+    blog posts from https://medium.com/ -->
+
+    <div id="main_container">
+      <!--    Start Container     -->
+      <div id="proceed_btn">Click To Proceed</div>
+
+      <!--    Guide Section    -->
+      <div id="guide_container">
+        <h2>Instructions To Take The Quiz</h2>
+        <h4>1.You got 1min (60 seconds) to complete this quiz.</h4>
+        <h4>2. This quiz contains 10 questions.</h4>
+        <h4>3. After the 60 seconds the quiz will end.</h4>
+        <h4>4. You will be allowed 1 mark for each correct answer.</h4>
+        <h4>5. The quiz results will be displayed at the end.</h4>
+        <div id="buttons">
+          <button id="exit_btn">Exit</button>
+          <button id="continue_btn">Continue</button>
+        </div>
+      </div>
+      <!--    Guide Section    -->
+
+      <!--    Main Quiz Container    -->
+      <div id="quiz_container">
+        <div id="quiz_header">
+          <div id="countdown">
+            <h6>Time Left</h6>
+            <h6 id="time_left">--</h6>
+          </div>
+        </div>
+
+        <!--  Questions  -->
+        <div id="question">
+          <h2 id="question_no">.</h2>
+          <h2 id="question_content">.</h2>
+        </div>
+        <!--  Questions  -->
+
+        <!-- Options   -->
+        <div id="option_list">
+          <h4 class="choice" id="option1">.</h4>
+          <h4 class="choice" id="option2">.</h4>
+          <h4 class="choice" id="option3">.</h4>
+          <h4 class="choice" id="option4">.</h4>
+        </div>
+        <!-- Options  -->
+
+        <!--Click to Next Section-->
+        <div id="btn_controllers">
+          <h3 id="exit_skip_btn">Exit</h3>
+          <h3 id="total_correct">.</h3>
+          <h3 id="next_question">Next</h3>
+        </div>
+      </div>
+      <!--    Main Quiz Container    -->
+
+      <!--   Results  -->
+      <div id="result">
+        <button id="restart">Restart Quiz</button>
+        <h6 id="correctly_answered">.</h6>
+        <h6 id="wrongly_answered">.</h6>
+        <h6 id="time_spent">.</h6>
+        <button id="quitBtn">Quit</button>
+      </div>
+    </div>
+    <!--   Results  -->
+
+    <!-- Footer -->
+    <div id="footer_main">
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
+
+      <div class="bottom-btn-group">
+        <button
+          class="nameTag footerBtn"
+          style="background-color: #00a8ff; font-weight: bold; padding: 12px"
+        >
+          Go back to >
+        </button>
+        <a class="footerBtn" href="editor3.html" style="padding-right: 725px;">Page Editor</a>
+      </div>
+
+      <!--The Footer section common every page of the site-->
+      <div class="footerPrimary" id="footerPrimary">
+        <p class="footer_text">
+          🏝🌴✨😍<br />
+          Dive into our website,<br />
+          emabark on a virtual journey through this enchanting paradise island
+          before your upcoming visit <br />
+          to discover the wonders that await you! <br />
+        </p>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <script src="script/quizQueue.js"></script>
+    <script src="script/quiz.js"></script>
+    <script src="script/navbar.js"></script>
+  </body>
+</html>

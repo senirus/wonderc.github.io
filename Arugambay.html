@@ -1,44 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
       <title>Wonder Ceylon - Your Gateway to the Soul of Sri Lanka</title>
+        
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;1,300&display=swap');
           </style>
+        
         <link rel="stylesheet" href="styles_main.css">
         <link rel="stylesheet" href="styles_Arugambay.css">
-
+        <script src="navbar.js"></script>
     </head>
+    
     <body>
-        <div class="navbar">
-            <img src="web_logo_main.png" alt="Wonder Ceylon Logo" class="siteLogo">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">Site Map</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Quiz</a></li>
-            <li><a href="comments.html">Comments</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Meet the Team</a></li>
-        </div>
-
-        <div class="headingCover">
-            <img src="arugam-bay-guide-things-to-do-elephant-rock.jpg" alt="arugam-bay-guide-things-to-do-elephant-rock" 
-            width="100%" height="10%">
-        </div>
-
-        <!-- Blogtype Layout got from https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
-
-        <div class="header">
-          <h2>A Guide To The Mesmerizing Beach On The Coast Of Sri Lanka.</h2>
+        
+      <!--Common navigation bar throughout the site-->
+      <div id="navbar">
+        <img src="web_logo_main.png" alt="Wonder Ceylon Logo" id="siteLogo">
+        
+        <div id="paths">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Store</a>
+            <a href="#">Explore</a>
+            <a href="#">Quiz</a>
+            <a href="comments.html">Feedback</a>
+            <a href="#">Pathfinder</a>       
+            <a href="#">Meet the Team</a>
         </div>
         
+      </div>
+
+      <!--Cover picture for the content page-->
+      <div class="headingCover">
+            <img src="arugam-bay-guide-things-to-do-elephant-rock.jpg" alt="arugam-bay-guide-things-to-do-elephant-rock" 
+            id="arugam-bay-cover-pic">
+      </div>
+
+      <!--Top button group for navigate to various levels of the page-->
+      <div class="btn-group" style="text-align: center;" >
+        <button class="nameTag" style="background-color:#00a8ff;">Jump to > </button>
+        <a href="#row">Step-by-Step Guide</a>
+        <a href="#card">Discovering Arugambay</a>
+        <a href="#footerPrimary">Bottom</a>
+      </div>
+
+      <!--Start of the blog-->
+      <!--Blogtype Layout got from https://www.w3schools.com/howto/howto_css_blog_layout.asp-->
+
+        <div class="header">
+          <h2>A Guide To The Mesmerizing Beach On The East Coast Of Sri Lanka.</h2>
+        </div>
+
+        <!--Start of Step-by-Step Guide part-->
         <div class="row" id="row">
           <div class="leftcolumn">
             <div class="card">
-              <h1 style="font-size: 40px;">A Detailed Guide</h1>
+              <h1 style="font-size: 40px;">Step-by-Step Guide</h1>
               <h5>Knowledge shared from <a href="https://traveltriangle.com/blog/arugam-bay-in-sri-lanka/" target="_blank" style="text-decoration: none;" >a guideline by Ruchika Anand</a></h5>
               <div class="fakeimg">
-                 <img src="Sri-Lanka-Beach-Cover.jpg" alt="eveningAtArugambay" width="100%">
+                 <img src="Sri-Lanka-Beach-Cover.jpg" alt="eveningAtArugambay" id="eveningAtArugambay">
               </div>
               <p style="font-size: larger;">Arugam Bay is a hidden gem located on the east coast of Sri Lanka. 
                 As it’s located far from the capital and other tourist attractions, 
@@ -49,17 +69,17 @@
                 the best beaches in the country. For those who are planning to give it a visit, 
                 here is our detailed guide to Arugam Bay:</p>
               <fieldset>
-                <legend>How To Get To Arugam Bay?</legend>
+                <h3>How To Get To Arugam Bay?</h3>
                 <p>Since Sri Lanka is a tropical country, the weather of Arugam Bay, 
                   Sri Lanka is mostly pleasant, except during the monsoon season.<br> 
                   The best time to visit would be <strong>during the months of May to September</strong>  when the monsoons have descended.</p>
-                <legend>Best Time To Visit Arugam Bay In Sri Lanka</legend>
+                <h3>Best Time To Visit Arugam Bay In Sri Lanka</h3>
                 <p>The closest airport to Arugam Bay, Sri Lanka, is the Batticaloa Airport.<br>
 
                   <strong>By Bus:</strong>  You can travel by bus from Colombo to Arugam Bay and the journey would take about 9 hours.<br>
                   
                   <strong>By Road:</strong>  You can hire a taxi or rent a car and drive to Pottuvil from any part of Sri Lanka. From Colombo, the journey takes 8 hours.</p>
-                <legend>Places To Visit In Arugam Bay</legend>
+                <h3>Places To Visit In Arugam Bay</h3>
                 <p>There are many places to visit in Sri Lanka, but Arugam Bay takes the cake.<br>
                   Here is a list of the top tourist places that you need to visit on your trip to this bay:<br>
                 <strong>Muhudu Maha Vihara:</strong><br>
@@ -82,7 +102,7 @@
                and has some splendid sunset views.<br>
               Distance from Arugam Bay: Located in Arugam Bay<br>
               How to get there: Car/Scooter<br></p> 
-              <legend>Things To Do In Arugam Bay</legend>
+              <h3>Things To Do In Arugam Bay</h3>
               <p>There are many things that you can try your hand at when in Arugam Bay.<br>
                  Here are some adventurous things one can do in Arugam Bay:<br>
                 <strong>Go surfing:</strong><br>
@@ -102,17 +122,17 @@
               <strong></strong></p> 
               </fieldset>
 
-
+            <!--Start of the Discovering Arugambay part-->
             </div>
             <div class="card" id="card">
-              <h1 style="font-size: 40px;">More About Arugambay...</h1>
+              <h1 style="font-size: 40px;">Discovering Arugambay...</h1>
               <h5>Knowledge shared from <a href="https://en.wikipedia.org/wiki/Arugam_Bay" target="_blank" style="text-decoration: none;" >Arugambay on wikipedia</a> </h5>
               <div class="fakeimg" style="margin-bottom: 25px;">
-                <img src="gambayView.jpg" alt="300px-Arugam_bay_beach" id="Arugam_bay_beach" width="100%">
+                <img src="gambayView.jpg" alt="300px-Arugam_bay_beach" id="Arugam_bay_beach" >
               </div>
               <fieldset>
-                <legend>A Tourist Destination for Surf 
-                  Tourism and Natural Attractions in Sri Lanka's Southeast Coast.</legend>
+                <h3>A Tourist Destination for Surf 
+                  Tourism and Natural Attractions in Sri Lanka's Southeast Coast.</h3>
                 <p>The bay is located 117 kilometres (73 mi) south of Batticaloa, 
                   320 kilometres (200 mi) due east of Colombo, and approximately 4 kilometres 
                   (2.5 mi) south of the market town of Pottuvil.<br> The main settlement in the area, 
@@ -126,7 +146,7 @@
                    thanks to several quality breaks in the area, 
                    however tourists are also attracted by the local beaches, 
                    lagoons, historic temples and the nearby Kumana National Park.</p>
-                <legend>Conflict between fishing and tourism</legend>
+                <h3>Conflict between fishing and tourism</h3>
                 <p>During the period of fighting between the central government and Tamil separatists tourism 
                   was fairly low key and the hotels often bought the catch of the fishermen.<br>
                    As a result of the peace, tourism expanded and many fishing people who had moved to areas
@@ -135,8 +155,8 @@
                      In the aftermath of the Tsunami fishing people were forbidden to return, 
                      officially on the grounds of safety but allegedly as a result of pressure from 
                      the hotel owners.</p>
-                <legend>Surrounding areas</legend>
-                <p>The nearby (4 kilometres (2.5 mi)) Muslim village of Pottuvil is the center 
+                <h3>Surrounding areas</h3>
+                 <p>The nearby (4 kilometres (2.5 mi)) Muslim village of Pottuvil is the center 
                   of commerce and transportation while tourist accommodations lie along the beach to
                    the south of Pottuvil Arugam Bay (4 kilometres (2.5 mi)) is also the gateway and the only
                     road access to the Yala East National Park.<br>
@@ -146,51 +166,66 @@
                       the Tamil shires at Okanda (32 kilometres (20 mi)).<br>
                        The local area is home to a number of elephants, often travelling between
                         Lahugala and Kumana national parks.</p>
-                <legend>Surfing</legend>
+                <h3>Surfing</h3>
                 <p>Arugam Bay is the most popular surf spot and is also the only international 
                   surf competition venue in Sri Lanka.<br>
                   It is also rated as one of the top ten surf destinations in the world.<br>
                    It has also hosted most of the international surfing competitions in Sri Lanka 
                    since 2004.<br> It also hosted the So Sri Lanka Pro 2019.</p>
-                <p></p>
+                
               </fieldset>
-
-              
             </div>
-          </div>
+        </div>
+          
+          <!--Start of the right column-->
           <div class="rightcolumn">
+            
             <div class="card">
-              <h2>About Me</h2>
-              <div class="fakeimg" style="height:100px;">Image</div>
-              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+              <img src="Things-To-Do-in-Arugam-Bay.jpg" alt="Things-To-Do-in-Arugam-Bay">
             </div>
             <div class="card">
-              <h3>Popular Post</h3>
-              <div class="fakeimg">Image</div><br>
-              <div class="fakeimg">Image</div><br>
-              <div class="fakeimg">Image</div>
+              <img src="bDMIOD_arugambay-half-marathon.jpg" alt="Things-To-Do-in-Arugam-Bay">
             </div>
             <div class="card">
-              <h3>Follow Me</h3>
-              <p>Some text..</p>
+              <img src="Arugam_Bay_Drone-1024x598.jpg" alt="Things-To-Do-in-Arugam-Bay">
+            </div>
+            
+            <div class="card">
+              <img src="Surfs-up-in-Arugam-Bay-slider-1.jpg" alt="Things-To-Do-in-Arugam-Bay">
+            </div>
+            <div class="card">
+              <img src="arugam-bay-guide-things-to-do-view-elephant-rock-648x810.jpg" alt="Things-To-Do-in-Arugam-Bay">
+            </div>
+            <div class="card">
+              <img src="arugam-bay-guide-things-to-do-climb-elephant-rock-648x810aaa.jpg" alt="Things-To-Do-in-Arugam-Bay">
+            </div>
+            
+            <div class="card">
+              <img src="arugambay-surf-15.jpeg" alt="Things-To-Do-in-Arugam-Bay">
+            </div>
+            <div class="card">
+              <img src="Surfs-up-in-Arugam-Bay-slider-6.jpg" alt="Things-To-Do-in-Arugam-Bay">
+            </div>
+            <div class="card">
+              <img src="sri-lanka-surf-guide-ahangama-arugam-bay-weligama-in-water-photographer-surf-camp.jpg" alt="Things-To-Do-in-Arugam-Bay">
             </div>
           </div>
         </div>
         
-        <div class="footer">
-          <h2>Footer</h2>
+      
+        <!--Bottom button group -->
+        <div class="btn-group" >
+          <a href="#top">🔝 Back to Top</a>
+          <a href="pageeditor_student2.html">👨‍💻 Meet the Editor</a>
         </div>
 
-        <div class="bottom-btn-group" >
-          <button class="nameTag" style="background-color:  #00a8ff; font-weight: bold;">Go back to > </button>
-          <a href="#top"><button>Top</button></a>
-          <a href="#row"><button>A Detailed Guide</button></a>
-          <a href="#card"><button>More About Arugambay</button></a>
+        
+        <!--The Footer section common every page of the site-->  
+        <div class="footerPrimary" id="footerPrimary">
+          <p class="footer_text">🏝️🌴✨😍<br>
+            Dive into our website,<br>
+            emabark on a virtual journey through this enchanting paradise island before your upcoming visit <br>
+            to discover the wonders that await you!  <br></p>
         </div>
-       
-        <div class="footerPrimary">
-            <p class="footer_text">Wonder Ceylone is your gateway to the soul of Sri Lanka. 
-              <br>Visit every page of our website to get to know about this beautiful paradise Island before your next visit.</p>
-        </div>
-      </body>
-  </html>
+    </body>
+</html>
