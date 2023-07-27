@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*Video*/
+#video-1 {
+  position: absolute;
+  width: 100vw;
+  object-fit: cover;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 700px;
+  padding-left: 50px;
+  margin-top: 10%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image_container {
+  position: relative;
+  width: 100%;
+  border: 8px solid #1e90ff;
+  box-shadow: rgba(0, 0, 0, 0.577) 0 8px 15px;
+  cursor: pointer;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 600px) {
+  .image {
+    height: 200px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 900px) {
+  .image {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.hovering_context {
+  transition: 0.5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); 
+  
+}
+
+/* Hovering Text */
+.text {
+  width: 300px;
+  padding: 16px 32px;
+  color: #fbc531;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.image_container:hover .image {
+  opacity: 0.8;
+}
+
+.image_container:hover .hovering_context {
+  opacity: 1;
+}
