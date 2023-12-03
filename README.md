@@ -12,12 +12,12 @@ Welcome to our collaborative tourism website project! This project aims to creat
 
 The Tourism Website is a multi-page HTML-based website designed to offer users information about different tourist destinations. Each page is carefully crafted to provide a seamless and enjoyable user experience.
 
-Usage
+## Usage
 Explore the website by navigating through different pages using the navigation menu.
 Click on destination cards to access detailed information about each location.
 Contact the project team via the provided contact form on the Contact page.
 
-Contributing
+## Contributing
 We welcome contributions from the community! If you would like to contribute to the project, please follow these steps:
 
 Fork the repository.
