@@ -5,20 +5,29 @@ Welcome to our collaborative tourism website project! This project aims to creat
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-- [Features](#features)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
 The Tourism Website is a multi-page HTML-based website designed to offer users information about different tourist destinations. Each page is carefully crafted to provide a seamless and enjoyable user experience.
 
-## Installation
+Usage
+Explore the website by navigating through different pages using the navigation menu.
+Click on destination cards to access detailed information about each location.
+Contact the project team via the provided contact form on the Contact page.
 
-1. Clone the repository:
+Contributing
+We welcome contributions from the community! If you would like to contribute to the project, please follow these steps:
 
-   ```bash
-   git clone https://github.com/senirus/wonderceylon
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Make your changes and commit them with descriptive commit messages.
+Push your changes to your fork.
+Submit a pull request to the main repository.
+
+
+
+
+   
 
